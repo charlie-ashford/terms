@@ -10,7 +10,7 @@
     <link rel="icon"
         href="https://yt3.ggpht.com/eg_5N8cvTJjQMnu4wvVoUy4ES2t0HbuFitpQBJJk24M4CQLfV5aps1qy9BCvhNUGUea5i4Vk=s800-c-k-c0x00ffffff-no-rj"
         type="image/png" />
-    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
         :root {
             --primary-color: #ff3b3f;
@@ -557,10 +557,10 @@
             reserved.</p>
     </footer>
     <button id="scrollToTopBtn" onclick="scrollToTop()">
-        <span class="iconify" data-icon="mdi:arrow-up-bold" data-inline="false"></span>
+        <i class="fas fa-arrow-up"></i>
     </button>
     <button id="toggleThemeBtn" class="toggle-theme-btn">
-        <span class="iconify" data-icon="ph:sun-bold" data-inline="false"></span>
+        <i class="fas fa-sun"></i>
     </button>
     <script>
         function showSection(event, sectionId) {
@@ -613,11 +613,12 @@
             document.body.classList.toggle("light-mode");
 
             if (document.body.classList.contains("light-mode")) {
-                toggleThemeBtn.innerHTML = '<span class="iconify" data-icon="ph:moon-bold" data-inline="false" style="font-size: 24px;"></span>';
+                toggleThemeBtn.innerHTML = '<i class="fas fa-moon"></i>';
             } else {
-                toggleThemeBtn.innerHTML = '<span class="iconify" data-icon="ph:sun-bold" data-inline="false" style="font-size: 24px;"></span>';
+                toggleThemeBtn.innerHTML = '<i class="fas fa-sun"></i>';
             }
         });
     </script>
 </body>
+
 </html>
