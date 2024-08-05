@@ -260,6 +260,10 @@
             background-color: #ff6b6e;
         }
 
+        .iconify {
+            font-size: 24px;
+        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -286,11 +290,11 @@
 
         @media (max-width: 768px) {
             header h1 {
-                 font-size: 2rem;
+                font-size: 2rem;
             }
 
             .toggle-theme-btn {
-                top: 25px;  
+                top: 25px;
                 right: 20px;
                 width: 40px;
                 height: 40px;
@@ -298,6 +302,10 @@
 
             nav ul {
                 flex-direction: column;
+            }
+
+            .iconify {
+                font-size: 18px;
             }
 
             nav ul li {
@@ -548,9 +556,11 @@
         <p>&copy; 2024 <a href="https://communitrics.com/invite" class="footer-link">Communitrics</a>. All rights
             reserved.</p>
     </footer>
-    <button id="scrollToTopBtn" onclick="scrollToTop()">&uarr;</button>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">
+        <span class="iconify" data-icon="mdi:arrow-up-bold" data-inline="false"></span>
+    </button>
     <button id="toggleThemeBtn" class="toggle-theme-btn">
-        <span class="iconify" data-icon="ph:sun-bold" data-inline="false" style="font-size: 24px;"></span>
+        <span class="iconify" data-icon="ph:sun-bold" data-inline="false"></span>
     </button>
     <script>
         function showSection(event, sectionId) {
