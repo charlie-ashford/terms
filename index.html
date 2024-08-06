@@ -633,6 +633,22 @@
         navLinks.forEach((link) => link.classList.remove("active"));
 
         event.target.classList.add("active");
+
+        customSmoothScrollToTop();
+      }
+
+      function customSmoothScrollToTop() {
+        const scrollDuration = 500; 
+        const scrollStep = -window.scrollY / (scrollDuration / 16.67); 
+
+        function step() {
+          if (window.scrollY > 0) {
+            window.scrollBy(0, scrollStep);
+            requestAnimationFrame(step);
+          }
+        }
+
+        requestAnimationFrame(step);
       }
 
       let lastScrollTop = 0;
